@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="sw" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AICT Kasulu</title>
+  <link rel="icon" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/carousel.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">
+        <img class="brand-logo" src="images/logo.png" alt="AICT logo">
+        <span class="brand-text"><strong>AICT</strong><small>KASULU</small></span>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#home" class="nav-link" data-i18n="nav_home">Nyumbani</a>
+        <a href="#about" class="nav-link" data-i18n="nav_about">Kuhusu sisi</a>
+        <a href="#announcements" class="nav-link" data-i18n="nav_news">Matangazo</a>
+        <a href="#events" class="nav-link" data-i18n="nav_events">Matukio</a>
+        <a href="#gallery" class="nav-link" data-i18n="nav_gallery">Picha</a>
+        <a href="#contact" class="nav-link" data-i18n="nav_contact">Mawasiliano</a>
+        <a href="#give" class="nav-link" data-i18n="nav_give">Toa</a>
+        <a href="#resources" class="nav-link" data-i18n="nav_resources">Nyenzo</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-button" id="themeToggle" aria-label="Badilisha mandhari">☾</button>
+        <button class="language-button" id="langToggle">EN</button>
+        <a class="give-button" href="#give"><span data-i18n="give_btn">Toa kwa moyo</span> →</a>
+      </div>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Menyu">☰</button>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="home" class="hero">
+      <div class="hero-image" id="heroImage" ></div>
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow light"><span></span><i data-i18n="hero_eyebrow">Mahali pa neema</i></p>
+          <h1 data-i18n="hero_title">Karibu nyumbani, karibu AICT Kasulu</h1>
+          <p class="hero-description" data-i18n="hero_text">Jamii ya waamini inayokua katika imani, upendo na huduma kwa watu wa Kasulu.</p>
+          <div class="hero-actions">
+            <a class="button button-gold" href="#about"><span data-i18n="hero_btn">Tujue zaidi</span> →</a>
+            <a class="play-link" href="#services"><span>▶</span><i data-i18n="hero_watch">Tazama ibada</i></a>
+          </div>
+        </div>
+
+        <div class="hero-meta">
+          <span id="slideCount">01 / 03</span>
+          <div class="progress-track"><span id="slideProgress"></span></div>
+          <span>Kasulu, Tanzania</span>
+        </div>
+      </div>
+
+      <div class="carousel-controls">
+        <button id="prevSlide" aria-label="Picha iliyopita">‹</button>
+        <div class="dots" id="dots"></div>
+        <button id="nextSlide" aria-label="Picha inayofuata">›</button>
+      </div>
+    </section>
+
+    <section id="about" class="section-shell welcome-section">
+      <div class="container split-grid">
+        <div>
+          <p class="eyebrow" data-i18n="welcome_eyebrow">Karibu katika nyumba ya imani</p>
+          <h2 data-i18n="welcome_title">Karibu AICT Kasulu</h2>
+          <div class="gold-rule"></div>
+          <p class="lead" data-i18n="welcome_text">Iwe ni mara yako ya kwanza au wewe ni sehemu ya familia yetu, kuna nafasi kwa ajili yako hapa. Tunakukaribisha uabudu nasi, ujifunze nasi na ukue nasi.</p>
+          <a class="text-button" href="#about-details"><span data-i18n="welcome_link">Soma kuhusu kanisa</span> →</a>
+        </div>
+
+        <div class="welcome-card">
+          <div class="cross-watermark">✦</div>
+          <p class="quote" data-i18n="verse_john">“Kwa sababu Mungu aliupenda ulimwengu, hata akamtoa Mwanawe wa pekee.”</p>
+          <span data-i18n="verse_john_ref">— Yohana 3:16</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about-details" class="section-shell vision-section">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow" data-i18n="belief_eyebrow">Tunachoamini</p>
+            <h2 data-i18n="belief_title">Imani inayogeuza maisha</h2>
+          </div>
+          <p class="section-note" data-i18n="belief_note">Tunatamani kuona kila mtu akimjua Kristo, akipendwa katika familia ya kanisa na kutumwa kwa kusudi.</p>
+        </div>
+
+        <div class="values-grid">
+          <article class="value-card">
+            <span class="value-number">01</span>
+            <div class="value-icon">📖</div>
+            <h3 data-i18n="vision_title">Maono</h3>
+            <p data-i18n="vision_text">Kusambaza injili ili kufikia watu wengi katika Kasulu na zaidi.</p>
+          </article>
+          <article class="value-card featured">
+            <span class="value-number">02</span>
+            <div class="value-icon">🤝</div>
+            <h3 data-i18n="mission_title">Dhamira</h3>
+            <p data-i18n="mission_text">Kujenga wanafunzi wa Kristo wanaomtumikia Mungu na jamii kwa uaminifu.</p>
+          </article>
+          <article class="value-card">
+            <span class="value-number">03</span>
+            <div class="value-icon">⛪</div>
+            <h3 data-i18n="values_title">Maadili</h3>
+            <p data-i18n="values_text">Upendo, ukweli, ukarimu, unyenyekevu na ubora katika kila tunalofanya.</p>
+          </article>
+        </div>
+
+        <div class="stats-row">
+          <div><strong>1998</strong><span data-i18n="stat_1">Tangu tulipoanza</span></div>
+          <div><strong>01</strong><span data-i18n="stat_2">Familia moja</span></div>
+          <div><strong>∞</strong><span data-i18n="stat_3">Tumaini lisiloisha</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section-shell services-section">
+      <div class="container service-layout">
+        <div>
+          <p class="eyebrow" data-i18n="services_eyebrow">Ratiba ya ibada</p>
+          <h2 data-i18n="services_title">Uwepo wako ni zawadi.</h2>
+          <p class="lead" data-i18n="services_text">Njoo tuabudu pamoja. Milango yetu iko wazi.</p>
+          <a class="button button-navy" href="#contact"><span data-i18n="services_btn">Tuwasiliane</span> →</a>
+        </div>
+
+        <div class="schedule-list">
+          <div class="schedule-item">
+            <span class="day" data-i18n="day_sun">JUMAPILI</span>
+            <strong data-i18n="service_1">Ibada ya kwanza</strong>
+            <span data-i18n="time_1">02:00 asubuhi</span>
+          </div>
+          <div class="schedule-item">
+            <span class="day" data-i18n="day_sun">JUMAPILI</span>
+            <strong data-i18n="service_2">Ibada kuu</strong>
+            <span data-i18n="time_2">04:00 asubuhi</span>
+          </div>
+          <div class="schedule-item">
+            <span class="day" data-i18n="day_wed">JUMATANO</span>
+            <strong data-i18n="service_3">Maombi ya jioni</strong>
+            <span data-i18n="time_3">11:00 jioni</span>
+          </div>
+          <div class="schedule-item">
+            <span class="day" data-i18n="day_fri">IJUMAA</span>
+            <strong data-i18n="service_4">Vijana &amp; Neno</strong>
+            <span data-i18n="time_4">11:00 jioni</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="announcements" class="section-shell news-section">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow" data-i18n="news_eyebrow">Tangazo la wiki</p>
+            <h2 data-i18n="news_title">Kinachoendelea sasa</h2>
+          </div>
+          <a class="text-button" href="#announcements"><span data-i18n="news_all">Angalia yote</span> →</a>
+        </div>
+
+        <div class="news-grid">
+          <article class="news-card large">
+            <div class="news-image" style="background-image: url('https://images.pexels.com/photos/8270597/pexels-photo-8270597.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');"></div>
+            <div class="news-content">
+              <span class="tag" data-i18n="news_1_tag">Jumapili · 07 Apr</span>
+              <h3 data-i18n="news_1_title">Wiki ya maombi na kujitakasa</h3>
+              <p data-i18n="news_1_text">Karibu katika wiki yetu ya maombi. Kila siku tunakutana kutafuta uso wa Mungu.</p>
+              <a class="text-button small" href="#announcements"><span data-i18n="read_more">Soma zaidi</span> →</a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-content">
+              <span class="tag" data-i18n="news_2_tag">Familia</span>
+              <h3 data-i18n="news_2_title">Mafunzo ya watoto kila Jumapili</h3>
+              <p data-i18n="news_2_text">Watoto wetu wanapata nafasi ya kujifunza Neno kwa furaha.</p>
+              <a class="text-button small" href="#announcements"><span data-i18n="read_more">Soma zaidi</span> →</a>
+            </div>
+          </article>
+
+          <article class="news-card accent">
+            <div class="news-content">
+              <span class="tag" data-i18n="news_3_tag">Huduma</span>
+              <h3 data-i18n="news_3_title">Jitolee katika huduma</h3>
+              <p data-i18n="news_3_text">Kuna nafasi kwako kutumia kipawa chako kuwabariki wengine.</p>
+              <a class="text-button small" href="#contact"><span data-i18n="join_us">Jiunge nasi</span> →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="events" class="section-shell events-section">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow" data-i18n="events_eyebrow">Kalenda ya kanisa</p>
+            <h2 data-i18n="events_title">Matukio yajayo</h2>
+          </div>
+          <span class="heading-icon">📅</span>
+        </div>
+
+        <div class="event-list">
+          <div class="event-row">
+            <div class="event-date"><strong>14</strong><span>APR</span></div>
+            <div class="event-info">
+              <span class="tag" data-i18n="event_1_tag">Jumapili · 10:00 asubuhi</span>
+              <h3 data-i18n="event_1_title">Ibada ya pamoja ya familia</h3>
+              <p data-i18n="event_1_place">Uwanja wa AICT Kasulu</p>
+            </div>
+            <span class="arrow">→</span>
+          </div>
+          <div class="event-row">
+            <div class="event-date"><strong>21</strong><span>APR</span></div>
+            <div class="event-info">
+              <span class="tag" data-i18n="event_2_tag">Jumapili · 09:00 jioni</span>
+              <h3 data-i18n="event_2_title">Mkesha wa sifa na maombi</h3>
+              <p data-i18n="event_2_place">Ukumbi mkuu wa kanisa</p>
+            </div>
+            <span class="arrow">→</span>
+          </div>
+          <div class="event-row">
+            <div class="event-date"><strong>28</strong><span>APR</span></div>
+            <div class="event-info">
+              <span class="tag" data-i18n="event_3_tag">Jumamosi · 03:00 asubuhi</span>
+              <h3 data-i18n="event_3_title">Siku ya usafi na huduma kwa jamii</h3>
+              <p data-i18n="event_3_place">Kasulu mjini</p>
+            </div>
+            <span class="arrow">→</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section-shell gallery-section">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow" data-i18n="gallery_eyebrow">Picha za familia</p>
+            <h2 data-i18n="gallery_title">Maisha pamoja</h2>
+          </div>
+          <a class="text-button" href="#gallery"><span data-i18n="gallery_all">Tazama picha zote</span> →</a>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-photo tall" style="background-image: url('images/choir2.jpg');"></div>
+          <div class="gallery-photo" style="background-image: url('images/choir.jpg');"></div>
+          <div class="gallery-photo" style="background-image: url('images/choir3.jpg');"></div>
+          <div class="gallery-caption">
+            <span class="caption-icon">♪</span>
+            <strong data-i18n="gallery_caption">Sauti za sifa</strong>
+            <span data-i18n="gallery_caption_2">Furaha inatuunganisha</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resources" class="section-shell resources-section">
+      <div class="container resources-layout">
+        <div>
+          <p class="eyebrow" data-i18n="res_eyebrow">Nyenzo za kukusaidia kukua</p>
+          <h2 data-i18n="res_title">Neno la Mungu, kila siku.</h2>
+          <p class="lead" data-i18n="res_text">Soma kifungu cha Biblia, sikiliza nyimbo za sifa na endelea kukua katika safari yako ya imani.</p>
+
+          <div class="resource-actions">
+            <a class="resource-link" href="https://www.bible.com/sw" target="_blank" rel="noreferrer">
+              <span class="resource-icon">📖</span>
+              <span class="resource-text">
+                <strong data-i18n="res_bible">Biblia ya Kiswahili</strong>
+                <small data-i18n="res_bible_text">Soma Biblia mtandaoni</small>
+              </span>
+              <span class="arrow">→</span>
+            </a>
+            <a class="resource-link" href="https://www.youtube.com/results?search_query=nyimbo+za+tenzi+za+Kiswahili" target="_blank" rel="noreferrer">
+              <span class="resource-icon">▶</span>
+              <span class="resource-text">
+                <strong data-i18n="res_hymns">Nyimbo za Tenzi</strong>
+                <small data-i18n="res_hymns_text">Sikiliza na kuabudu</small>
+              </span>
+              <span class="arrow">→</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="scripture-card">
+          <span class="scripture-label" data-i18n="verse_label">NENO LA LEO</span>
+          <p data-i18n="verse_psalm">“Bwana ndiye mchungaji wangu, sitapungukiwa na kitu.”</p>
+          <strong data-i18n="verse_psalm_ref">Zaburi 23:1</strong>
+          <div class="scripture-line"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-shell contact-section">
+      <div class="container contact-layout">
+        <div>
+          <p class="eyebrow" data-i18n="contact_eyebrow">Tuwasiliane</p>
+          <h2 data-i18n="contact_title">Tungependa kusikia kutoka kwako.</h2>
+          <p class="lead" data-i18n="contact_text">Una swali, ombi la maombi au ungependa kutembelea? Tupo hapa kwa ajili yako.</p>
+
+          <div class="contact-details">
+            <a href="mailto:aictkasulu@gmail.com"><i>✉</i><span>aictkasulu@gmail.com</span></a>
+            <a href="tel:+255755000000"><i>☎</i><span>+255 755 000 000</span></a>
+            <span><i>⌖</i><span>S.L.P 387, Kasulu, Kigoma</span></span>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <label><span data-i18n="form_name">Jina lako</span>
+            <input type="text" name="name" required data-i18n-placeholder="form_name_ph" placeholder="Andika jina lako">
+          </label>
+          <label><span data-i18n="form_email">Barua pepe</span>
+            <input type="email" name="email" required placeholder="jina@mfano.com">
+          </label>
+          <label><span data-i18n="form_message">Ujumbe</span>
+            <textarea name="message" rows="4" required data-i18n-placeholder="form_message_ph" placeholder="Tunawezaje kukusaidia?"></textarea>
+          </label>
+          <button class="button button-navy" type="submit"><span data-i18n="form_send">Tuma ujumbe</span> →</button>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="give" class="section-shell give-section">
+      <div class="container give-layout">
+        <div>
+          <p class="eyebrow light" data-i18n="give_eyebrow">Toa kwa moyo</p>
+          <h2 data-i18n="give_title">Ukarimu wako unaacha alama.</h2>
+          <p data-i18n="give_text">Michango yako inasaidia injili, watoto, vijana na huduma kwa jamii kuendelea mbele.</p>
+          <a class="button button-gold" href="mailto:aictkasulu@gmail.com"><span data-i18n="give_contact">Wasiliana nasi</span> →</a>
+        </div>
+
+        <div class="giving-cards">
+          <div>
+            <span>NMB BANK</span>
+            <strong>789 789 789</strong>
+            <button class="copy-btn" data-copy="789789789" aria-label="Nakili">⧉</button>
+          </div>
+          <div>
+            <span>CRDB BANK</span>
+            <strong>373 887 3883</strong>
+            <button class="copy-btn" data-copy="3738873883" aria-label="Nakili">⧉</button>
+          </div>
+          <div>
+            <span>M-PESA LIPA</span>
+            <strong>0000</strong>
+            <button class="copy-btn" data-copy="0000" aria-label="Nakili">⧉</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="#home">
+          <img class="brand-logo" src="images/logo.png" alt="AICT logo">
+          <span class="brand-text"><strong>AICT</strong><small>KASULU</small></span>
+        </a>
+        <p data-i18n="footer_about">Familia ya waamini Kasulu inayotangaza injili kwa upendo na tumaini.</p>
+      </div>
+
+      <div>
+        <h4 data-i18n="footer_visit">Tembelea</h4>
+        <a href="#home" data-i18n="nav_home">Nyumbani</a>
+        <a href="#about" data-i18n="nav_about">Kuhusu sisi</a>
+        <a href="#announcements" data-i18n="nav_news">Matangazo</a>
+        <a href="#events" data-i18n="nav_events">Matukio</a>
+      </div>
+
+      <div>
+        <h4 data-i18n="footer_contact">Wasiliana</h4>
+        <span>S.L.P 387, Kasulu</span>
+        <span>Kigoma, Tanzania</span>
+        <a href="mailto:aictkasulu@gmail.com">aictkasulu@gmail.com</a>
+      </div>
+
+      <div>
+        <h4 data-i18n="footer_follow">Tufuate</h4>
+        <div class="socials">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="YouTube">▶</a>
+          <a href="#" aria-label="Instagram">◎</a>
+          <a href="#" aria-label="WhatsApp">✆</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span data-i18n="footer_rights">© 2026 AICT Kasulu. Haki zote zimehifadhiwa.</span>
+      <span data-i18n="footer_motto">Imani · Tumaini · Upendo</span>
+    </div>
+  </footer>
+
+  <script src="js/theme.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/carousel.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
